@@ -26,7 +26,7 @@ export class HomeComponent {
       title: '🚌 Monitoramento de Frota em Tempo Real usando a API Olho Vivo',
       author: 'Thayná Quinteiro',
       date: '19 Nov 2025',
-      description: 'Nesta atividade, desenvolvemos um sistema capaz de buscar informações de uma linha de ônibus, listar suas paradas e exibir, em tempo real, a localização dos veículos dessa linha em um mapa interativo.',
+      description: 'Nesta atividade, foi desenvolvido um sistema capaz de buscar informações de uma linha de ônibus, listar suas paradas e exibir, em tempo real, a localização dos veículos dessa linha em um mapa interativo.',
       image: 'Atividade2.png'
     },
     {
