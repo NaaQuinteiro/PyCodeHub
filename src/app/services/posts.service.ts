@@ -9,7 +9,7 @@ export class PostService {
     {
         "id": 1,
         "title": "Cotação do Dólar com Python e API do Banco Central",
-        "subtitle": "Publicado por Thayná Quinteiro, 17 Nov 2025.",
+        "subtitle": "Publicado por Thayná Quinteiro, 19 Nov 2025.",
         "githubUrl": "https://github.com/NaaQuinteiro/TrabalhosIndividuais/blob/main/Atividade1/cotacaoDolarPorPeriodo.py",
         "content": [
             {
@@ -114,7 +114,7 @@ export class PostService {
     {
         "id": 2, 
         "title": "Monitorando Ônibus em Tempo Real com a API Olho Vivo (SPTrans)",
-        "subtitle": "Publicado por Thayná Quinteiro, 17 Nov 2025.",
+        "subtitle": "Publicado por Thayná Quinteiro, 19 Nov 2025.",
         "githubUrl": "https://github.com/NaaQuinteiro/TrabalhosIndividuais/blob/main/Atividade2/monitoramentoFrotaOnibus.py",
         "content": [
             {
@@ -248,7 +248,7 @@ export class PostService {
     {
         "id": 3, 
         "title": "Regressão Linear com Python: Relacionando Anos de Estudo e Salário",
-        "subtitle": "Publicado por Thayná Quinteiro, 17 Nov 2025.",
+        "subtitle": "Publicado por Thayná Quinteiro, 19 Nov 2025.",
         "githubUrl": "https://github.com/NaaQuinteiro/TrabalhosIndividuais/blob/main/Atividade3/regressaoLinear.py",
         "content": [
             {
