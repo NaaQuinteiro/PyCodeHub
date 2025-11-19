@@ -1,0 +1,86 @@
+.card {
+  font-family: var(--font-open-sans);
+  padding: 20px 20px 20px 28px; 
+  border-radius: 8px;
+  max-width: 900px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  transition: background 0.25s ease, transform 0.25s ease;
+  color: var(--color-base);
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;           
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    background: linear-gradient(
+      to bottom,
+      var(--color-primary),
+      var(--color-secundary)
+    );
+    transition: width 0.25s ease;
+  }
+
+  &:hover {
+    background: rgba(136, 134, 139, 0.08); 
+    transform: translateX(4px);
+
+    &::before {
+      width: 6px; 
+    }
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    p {
+      line-height: 1.6;
+    }
+  }
+
+  .text {
+    flex: 1; 
+
+    h2{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .image {
+    width: 250px; 
+    flex-shrink: 0; 
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  .read-more {
+    display: block;
+    margin-top: 12px;
+    color: var(--color-tertiary);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .publication-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    h4{
+      font-weight: 600;
+      color: #696773;
+    }
+  }
+}

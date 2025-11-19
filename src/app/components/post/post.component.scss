@@ -1,0 +1,83 @@
+.post-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.subtitle {
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin-top: 28px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.text-block {
+  margin: 18px 0;
+}
+
+h3 {
+  padding-top:20px ;
+}
+.post-image {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.github-link {
+  margin-top: 30px;
+
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; 
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(95deg, var(--color-primary), var(--color-secundary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text; 
+    }
+
+    i {
+      font-size: 1.2rem;
+      transition: inherit;
+    }
+  }
+}
+
+.actions-btn{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+
+  button{
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(95deg, var(--color-primary), var(--color-secundary));
+    color: #fff;
+  
+  }
+}
+
+
+
+

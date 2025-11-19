@@ -1,0 +1,13 @@
+<div class="code-container">
+  <div class="copy-btn">
+    <button  (click)="copy()">
+      <i class="fa-regular fa-copy"></i>
+    </button>
+  </div>
+  <pre>
+    <code 
+      [class]="'language-' + language"
+      [textContent]="code">
+    </code>
+  </pre>
+</div>

@@ -1,0 +1,41 @@
+<div class="post-container">
+  <h1>{{ post?.title }}</h1>
+  <h2 class="subtitle">{{ post?.subtitle }}</h2>
+
+  <div class="github-link" *ngIf="post?.githubUrl">
+    <a [href]="post.githubUrl" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github"></i> 
+      Ver código no GitHub
+    </a>
+  </div>
+
+  <ng-container *ngFor="let block of post?.content">
+    <p *ngIf="block.type === 'text'">{{ block.body }}</p>
+
+    <h3 *ngIf="block.type === 'section'">{{ block.title }}</h3>
+
+    <app-code-block
+      *ngIf="block.type === 'code'"
+      [language]="block.language || 'python'"
+      [code]="block.body">
+    </app-code-block>
+
+    <!-- Imagem -->
+    <img 
+      *ngIf="block.type === 'image'" 
+      [src]="block.src" 
+      [alt]="block.alt" 
+      class="post-image"
+    />
+
+    <!-- iFrame -->
+     <iframe *ngIf="block.type === 'iframe'"
+     [src]="sanitize(block.src)" style="width:100%; height:500px; border:1px solid #ccc;"></iframe>
+ 
+  </ng-container>
+
+  <div class="actions-btn">
+    <button class="back-btn" (click)="goToHome()">Voltar</button>
+  </div>
+</div>
+<app-footer></app-footer>
