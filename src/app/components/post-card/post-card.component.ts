@@ -15,6 +15,8 @@ export class PostCardComponent {
 
 
   goToPost() {
-    this.router.navigate(['/post', this.post.id]);
+    this.router.navigate(['/post', this.post.id]).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 }
